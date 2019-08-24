@@ -34,20 +34,21 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#e7e5e5">
-
+        android:background="#e7e5e5"
+        >
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.cbitss.careforu.AddReminder"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="0dp"
-            android:layout_marginRight="30dp"
-            android:orientation="vertical"
-            tools:context="com.cbitss.careforu.AddReminder">
+            android:layout_marginRight="30dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -61,47 +62,46 @@
                     android:background="#990000"
 
                     />
-
                 <TextView
-                    android:id="@+id/info"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="10dp"
                     android:text="Information"
                     android:textColor="@color/colorAccent"
-                    android:textSize="18dp" />
-
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18dp"
+                    android:id="@+id/info"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_centerVertical="true"
+                    android:background="#990000"
                     android:layout_toRightOf="@id/info"
-                    android:background="#990000" />
+                    />
             </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-12dp"
                 android:background="@drawable/border_without_top"
-                android:orientation="vertical"
                 android:paddingLeft="10dp"
-                android:paddingTop="5dp"
                 android:paddingRight="10dp"
-                android:paddingBottom="5dp">
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="-12dp"
+                android:orientation="vertical">
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp">
-
+                    >
                     <android.support.design.widget.TextInputEditText
-                        android:id="@+id/medname"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Name"
-                        android:singleLine="true" />
+                        android:id="@+id/medname"
+                        android:singleLine="true"/>
                 </android.support.design.widget.TextInputLayout>
 
 
@@ -109,156 +109,149 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp">
-
                     <android.support.design.widget.TextInputEditText
                         android:id="@+id/medinf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Instructions" />
+                        android:hint="Instructions"
+                        />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp">
 
                 <View
-                    android:id="@+id/left"
                     android:layout_width="20dp"
                     android:layout_height="2dp"
+                    android:id="@+id/left"
                     android:layout_centerVertical="true"
                     android:background="#990000"
 
                     />
-
                 <TextView
-                    android:id="@+id/or"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="10dp"
                     android:text="Schedule Type"
                     android:textColor="@color/colorAccent"
-                    android:textSize="18dp" />
-
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18dp"
+                    android:id="@+id/or"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_centerVertical="true"
+                    android:background="#990000"
                     android:layout_toRightOf="@id/or"
-                    android:background="#990000" />
+                    />
             </RelativeLayout>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-12dp"
                 android:background="@drawable/border_without_top"
-                android:orientation="vertical"
                 android:paddingLeft="10dp"
-                android:paddingTop="5dp"
                 android:paddingRight="10dp"
-                android:paddingBottom="5dp">
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="-12dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="Every"
-                    android:textSize="14sp" />
-
+                    android:textSize="14sp"
+                    />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <Spinner
-                        android:id="@+id/interval"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="10dp"
                         android:layout_marginTop="5dp"
-                        android:padding="10dp" />
-
+                        android:id="@+id/interval"
+                        />
                     <Spinner
-                        android:id="@+id/time_unit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:padding="10dp"
                         android:layout_marginTop="5dp"
-                        android:padding="10dp" />
+                        android:id="@+id/time_unit"
+                        />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/weekdays_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:orientation="vertical"
+                android:id="@+id/weekdays_layout"
                 android:visibility="gone">
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textAllCaps="true"
                     android:layout_marginTop="20dp"
                     android:text="Choose Weekdays"
-                    android:textAllCaps="true"
-                    android:textSize="16sp" />
-
+                    android:textSize="16sp"
+                    />
                 <CheckBox
-                    android:id="@+id/monday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Monday"
-                    android:textSize="15sp" />
-
+                    android:id="@+id/monday"
+                    android:textSize="15sp"/>
                 <CheckBox
-                    android:id="@+id/tuesday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tuesday"
-                    android:textSize="15sp" />
-
+                    android:id="@+id/tuesday"
+                    android:textSize="15sp"/>
                 <CheckBox
-                    android:id="@+id/wednesday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Wednesday"
-                    android:textSize="15sp" />
-
+                    android:id="@+id/wednesday"
+                    android:textSize="15sp"/>
                 <CheckBox
-                    android:id="@+id/thursday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Thursday"
-                    android:textSize="15sp" />
-
+                    android:id="@+id/thursday"
+                    android:textSize="15sp"/>
                 <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:id="@+id/friday"
+                    android:text="Friday"/>
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Friday" />
-
-                <CheckBox
                     android:id="@+id/saturday"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Saturday" />
-
+                    android:text="Saturday"/>
                 <CheckBox
-                    android:id="@+id/sunday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sunday" />
+                    android:id="@+id/sunday"
+                    android:text="Sunday"/>
 
             </LinearLayout>
 
 
+
             <RelativeLayout
-                android:id="@+id/frequency_rl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/frequency_rl"
                 android:layout_marginTop="20dp">
 
                 <View
@@ -268,116 +261,109 @@
                     android:background="#990000"
 
                     />
-
                 <TextView
-                    android:id="@+id/line3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="10dp"
                     android:text="Frequency"
                     android:textColor="@color/colorAccent"
-                    android:textSize="18dp" />
-
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18dp"
+                    android:id="@+id/line3"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_centerVertical="true"
+                    android:background="#990000"
                     android:layout_toRightOf="@id/line3"
-                    android:background="#990000" />
+                    />
             </RelativeLayout>
 
             <LinearLayout
-                android:id="@+id/freq_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-12dp"
                 android:background="@drawable/border_without_top"
-                android:orientation="vertical"
+                android:layout_marginTop="-12dp"
                 android:paddingLeft="10dp"
-                android:paddingTop="5dp"
                 android:paddingRight="10dp"
-                android:paddingBottom="10dp">
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical"
+                android:id="@+id/freq_layout">
 
                 <Spinner
-                    android:id="@+id/times"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:padding="10dp"></Spinner>
-
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/times">
+                </Spinner>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Choose Times"
-                    android:textSize="14sp" />
-
+                    android:textSize="14sp"
+                    />
                 <GridLayout
-                    android:id="@+id/times_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="5dp"
+                    android:id="@+id/times_layout"
+                    android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:columnCount="3">
-
                     <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:textSize="16sp"
                         android:id="@+id/time1"
+                        android:textColor="#000000"
+                        android:text="hello"/>
+                    <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:textSize="16sp"
                         android:layout_columnWeight="1"
-                        android:text="hello"
                         android:textColor="#000000"
-                        android:textSize="16sp" />
-
-                    <TextView
                         android:id="@+id/time2"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_columnWeight="1"
-                        android:text="hello"
-                        android:textColor="#000000"
-                        android:textSize="16sp" />
-
+                        android:text="hello"/>
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
                         android:id="@+id/time3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="hello"
                         android:textColor="#000000"
-                        android:textSize="16sp" />
-
+                        android:text="hello"/>
                     <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_columnWeight="1"
                         android:id="@+id/time4"
+                        android:textColor="#000000"
+                        android:text="hello"/>
+                    <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_columnWeight="1"
+                        android:textSize="16sp"
                         android:layout_marginTop="5dp"
-                        android:text="hello"
-                        android:textColor="#000000"
-                        android:textSize="16sp" />
-
-                    <TextView
+                        android:layout_columnWeight="1"
                         android:id="@+id/time5"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_columnWeight="1"
-                        android:layout_marginTop="5dp"
-                        android:text="hello"
                         android:textColor="#000000"
-                        android:textSize="16sp" />
-
+                        android:text="hello"/>
                     <TextView
-                        android:id="@+id/time6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textSize="16sp"
                         android:layout_marginTop="5dp"
-                        android:text="hello"
+                        android:id="@+id/time6"
                         android:textColor="#000000"
-                        android:textSize="16sp" />
+                        android:text="hello"/>
                 </GridLayout>
 
             </LinearLayout>
@@ -394,106 +380,101 @@
                     android:background="#990000"
 
                     />
-
                 <TextView
-                    android:id="@+id/line4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="10dp"
                     android:text="Schedule Type"
                     android:textColor="@color/colorAccent"
-                    android:textSize="18dp" />
-
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18dp"
+                    android:id="@+id/line4"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_centerVertical="true"
+                    android:background="#990000"
                     android:layout_toRightOf="@id/line4"
-                    android:background="#990000" />
+                    />
             </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:orientation="vertical"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-12dp"
-                android:layout_marginBottom="15dp"
-                android:background="@drawable/border_without_top"
-                android:orientation="vertical"
                 android:paddingLeft="10dp"
-                android:paddingTop="5dp"
                 android:paddingRight="10dp"
-                android:paddingBottom="10dp">
-
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border_without_top">
                 <LinearLayout
-                    android:id="@+id/starting_time_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:orientation="horizontal"
-                    android:visibility="gone">
-
+                    android:id="@+id/starting_time_layout"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    >
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:text="Starting Time"
-                        android:textSize="16sp" />
-
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        />
                     <TextView
-                        android:id="@+id/starting_time"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:id="@+id/starting_time"
+                        android:textSize="16sp"
                         android:text="Starting Time "
                         android:textColor="#000000"
-                        android:textSize="16sp" />
+                        android:layout_weight="1"/>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:orientation="horizontal">
-
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:text="Starting Date "
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/starting_date"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Starting Date"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:id="@+id/starting_date"
+                        android:textSize="16sp"
                         android:textColor="#000000"
-                        android:textSize="16sp" />
+                        android:text="Starting Date"/>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:orientation="horizontal">
-
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:textSize="16sp"
                         android:text="Ending Date "
-                        android:textSize="16sp" />
-
+                        android:layout_weight="1"
+                        />
                     <TextView
-                        android:id="@+id/ending_date"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Ending Date"
+                        android:id="@+id/ending_date"
+                        android:textSize="16sp"
                         android:textColor="#000000"
-                        android:textSize="16sp" />
+                        android:text="Ending Date"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
