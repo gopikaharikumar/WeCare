@@ -11,9 +11,7 @@ import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by hp on 6/28/2017.
- */
+
 
 public class MedReminderObj  {
 

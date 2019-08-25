@@ -5,22 +5,16 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
-import android.widget.Toast;
 
-import java.util.ArrayList;
+
+
 import java.util.List;
 
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
-import static com.cbitss.careforu.R.id.rv;
-import static com.google.android.gms.wallet.PaymentInstrumentType.getAll;
 
 
 /**
@@ -50,14 +44,7 @@ public class FirstAidOffline extends Fragment implements SwipeRefreshLayout.OnRe
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FirstAidOffline.
-     */
+  \
     // TODO: Rename and change types and number of parameters
     public static FirstAidOffline newInstance(String param1, String param2) {
         FirstAidOffline fragment = new FirstAidOffline();
@@ -90,7 +77,6 @@ public class FirstAidOffline extends Fragment implements SwipeRefreshLayout.OnRe
         swipeRefreshLayout.setOnRefreshListener(this);
         refresh();
         return v;
-        // Inflate the layout for this fragment
     }
 
 
@@ -144,7 +130,7 @@ public class FirstAidOffline extends Fragment implements SwipeRefreshLayout.OnRe
 
 
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
+
         void onFragmentInteraction(Uri uri);
     }
 }

@@ -37,8 +37,7 @@ public class CustomAdapter extends PagerAdapter {
         imageView.setScaleType(ImageView.ScaleType.FIT_XY);
         cposition++;
 
-        Animation rotateimage = AnimationUtils.loadAnimation(context, R.anim.slidingimages);
-        imageView.startAnimation(rotateimage);
+
 
         ((ViewPager) container).addView(viewItem);
 

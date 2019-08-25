@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="back"
-            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:srcCompat="@drawable/ic_arrow_back_black_24dp"
             android:id="@+id/back_view_reminder"
             />
         <ImageView
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:tint="#ffffff"
             android:onClick="delete"
-            android:src="@drawable/ic_delete_black_24dp"
+            android:srcCompat="@drawable/ic_delete_black_24dp"
             android:layout_marginRight="10dp"
             android:layout_gravity="right" />
         <TextView
@@ -482,3 +482,4 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+</LinearLayout>

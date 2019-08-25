@@ -1,7 +1,5 @@
 package com.example.android.wecare;
 
-package com.cbitss.careforu;
-
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
@@ -38,7 +36,6 @@ public class GooglePlacesReadTask extends AsyncTask<Object, Integer, String> {
         Object[] toPass = new Object[2];
         toPass[0] = googleMap;
         toPass[1] = result;
-
         placesDisplayTask.execute(toPass);
     }
 }
